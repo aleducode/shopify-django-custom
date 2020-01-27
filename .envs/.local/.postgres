@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=shopify
+POSTGRES_USER=user-ducode
+POSTGRES_PASSWORD=123jua91ducode
