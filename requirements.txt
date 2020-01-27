@@ -4,3 +4,4 @@ python-dotenv
 psycopg2-binary
 django-environ
 ipdb
+gunicorn==19.9.0  # https://github.com/benoitc/gunicorn

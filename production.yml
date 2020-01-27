@@ -28,7 +28,11 @@ services:
       - production_postgres_data_backups:/backups
     env_file:
       - ./.envs/.production/.postgres
-
+    ports:
+      - "8000:8000"
+      - "587:587"
+      - "25:25"
+    command: python manage.py runserver 0.0.0.0:8000
   traefik:
     build:
       context: .

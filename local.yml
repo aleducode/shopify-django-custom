@@ -22,7 +22,7 @@ services:
       - "8000:8000"
       - "587:587"
       - "25:25"
-    command: /start
+    command: python manage.py runserver 0.0.0.0:8000
 
   postgres:
     build:
