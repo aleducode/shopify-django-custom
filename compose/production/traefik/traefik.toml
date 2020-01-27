@@ -29,7 +29,7 @@ OnHostRule = true
 [backends]
   [backends.web]
     [backends.web.servers.server1]
-      url = "http://web:5000"
+      url = "http://web:8000"
 
 [frontends]
   [frontends.web]
