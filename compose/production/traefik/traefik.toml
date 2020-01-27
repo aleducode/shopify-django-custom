@@ -27,15 +27,15 @@ OnHostRule = true
 
 [file]
 [backends]
-  [backends.web]
-    [backends.web.servers.server1]
-      url = "http://web:8000"
+  [backends.django]
+    [backends.django.servers.server1]
+      url = "http://django:8000"
 
 [frontends]
-  [frontends.web]
-    backend = "web"
+  [frontends.django]
+    backend = "django"
     passHostHeader = true
-    [frontends.web.headers]
+    [frontends.django.headers]
       HostsProxyHeaders = ['X-CSRFToken']
-    [frontends.web.routes.dr1]
+    [frontends.django.routes.dr1]
       rule = "Host:oelo.smkonline.co"
